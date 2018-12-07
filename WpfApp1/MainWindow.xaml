@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
 mc:Ignorable="d" FontSize="22"
-        Title="WPF Practice" Height="800" Width="1000">
+        Title="WPF Practice" Height="800" Width="1400">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20" />
@@ -109,12 +109,19 @@ mc:Ignorable="d" FontSize="22"
                  Height="80" Margin="0,20,0,10"/>
 
         <!--Attach Excel File location-->
-        <TextBlock Text="Click to attach Excel Book Roll Location" Grid.Column="1" Grid.Row="14" 
+        <TextBlock Text="Click to attach Excel Book Roll File Location" Grid.Column="1" Grid.Row="14" 
             Margin="0,30,10,10" FontSize="18" TextWrapping="Wrap"
                    Grid.ColumnSpan="2"/>
         <Button x:Name="btnAttachExcel" Content="Attach..." Grid.Column="2" Grid.Row="15" 
                 Margin="10,0,0,10" FontSize="16" Height="30"/>
+        <Label x:Name="excelFilePath" Content="....." Grid.Column="3" Grid.Row="15" 
+               Margin="10,0,0,0"/>
 
+        <!--Datagridview-->
+        <DataGrid x:Name="dgvBookRoll" Grid.Column="4" Grid.Row="2" 
+                  Grid.RowSpan="12"/>
+        <Label x:Name="lblDataGridResults" Content="...." Grid.Column="4" 
+               Grid.Row="14" Margin="0,0,0,0"/>
 
     </Grid>
 </Window>
