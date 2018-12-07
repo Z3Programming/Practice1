@@ -51,20 +51,20 @@ mc:Ignorable="d" FontSize="22"
         <!--From Company-->
         <TextBlock Text="From Company:" Grid.Column="1" Grid.Row="2" 
                    Margin="0,0,10,0"/>
-        <ComboBox x:Name="cboFromCompany" Grid.Column="2" Grid.Row="2"
-                 Width="180" Margin="0,0,0,10"/>
+        <ComboBox x:Name="cboFromCompany"  ItemsSource="{Binding carrierNames}" Grid.Column="2" Grid.Row="2"
+                 Width="200" Margin="0,0,0,10"/>
 
         <!--To Company-->
         <TextBlock Text="To Company:" Grid.Column="1" Grid.Row="4" 
                    Margin="0,0,10,0"/>
         <ComboBox x:Name="cboToCompany" Grid.Column="2" Grid.Row="4"
-                 Width="180" Margin="0,0,0,10"/>
+                 Width="200" Margin="0,0,0,10"/>
 
         <!--BA Tag-->
         <TextBlock Text="BA Tag:" Grid.Column="1" Grid.Row="5" 
             Margin="0,0,10,0"/>
         <TextBox x:Name="txtBATag" Grid.Column="2" Grid.Row="5"
-                 Width="180" Margin="0,0,0,10"/>
+                 Width="200" Margin="0,0,0,10"/>
 
         <!--Create Activity-->
         <TextBlock Text="Create Activity?" Grid.Column="1" Grid.Row="6" 
@@ -88,19 +88,19 @@ mc:Ignorable="d" FontSize="22"
         <TextBlock Text="Suspended From:" Grid.Column="1" Grid.Row="10" 
                    Margin="0,0,10,0"/>
         <ComboBox x:Name="cboSuspendedFrom" Grid.Column="2" Grid.Row="10"
-                 Width="180" Margin="0,0,0,10"/>
+                 Width="200" Margin="0,0,0,10"/>
 
         <!--Suspended To-->
         <TextBlock Text="Suspended To:" Grid.Column="1" Grid.Row="11" 
                    Margin="0,0,10,0"/>
         <ComboBox x:Name="cboSuspendedTo" Grid.Column="2" Grid.Row="11"
-                 Width="180" Margin="0,0,0,10"/>
+                 Width="200" Margin="0,0,0,10"/>
 
         <!--Suspense Due Date-->
         <TextBlock Text="Days Before Exp Date:" Grid.Column="1" Grid.Row="12" 
                    Margin="0,0,10,0"/>
         <TextBox x:Name="txtDueDateDays" Grid.Column="2" Grid.Row="12"
-                 Margin="-130,0,0,10" Width="50"/>
+                 Margin="-150,0,0,10" Width="50"/>
 
         <!--Suspense Text Description-->
         <TextBlock Text="Suspense Description:" Grid.Column="1" Grid.Row="13" 
